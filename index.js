@@ -1,21 +1,27 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
+const fs = require('fs').promises;  
 const questions = require('./lib/userQuestions.js');
-const fileName = "./examples/logo.svg";
-const setShape = require('./lib/chooseShape.js')
+const chooseShape = require('./lib/chooseShape.js');
 
-function createLogo(response) {
-    const svg = setShape(response);
-    fs.writeFile(fileName, svg, ()=> console.log('Generated logo.svg'));
+const fileName = './examples/logo.svg'; 
+
+async function createLogo(response) {
+    const svg = chooseShape(response);
+    try {
+        await fs.writeFile(fileName, svg);
+        console.log('Generated logo.svg');
+    } catch (err) {
+        console.error('Error writing logo.svg:', err);
+    }
 }
-function init() {
-    inquirer 
-    .prompt(questions)
-    .then((response) => {
-        createLogo(response);
-        })
-    .catch(err => {
-            console.log(err)
-        });
+
+async function init() {
+    try {
+        const response = await inquirer.prompt(questions);
+        await createLogo(response);
+    } catch (err) {
+        console.error('Error during initialization:', err);
+    }
 }
+
 init();
