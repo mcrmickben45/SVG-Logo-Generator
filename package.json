@@ -4,27 +4,27 @@
     "description": "",
     "main": "index.js",
     "directories": {
-      "lib": "lib"
+        "lib": "lib"
     },
     "scripts": {
-      "test": "jest",
-      "start": "node ."
+        "test": "jest",
+        "start": "node ."
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/mcrmickben45/SVG-Logo-Generator.git"
+        "type": "git",
+        "url": "git+https://github.com/mcrmickben45/SVG-Logo-Generator.git"
     },
     "keywords": [],
     "author": "",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/mcrmickben45/SVG-Logo-Generator/issues"
+        "url": "https://github.com/mcrmickben45/SVG-Logo-Generator/issues"
     },
     "homepage": "https://github.com/mcrmickben45/SVG-Logo-Generator#readme",
     "dependencies": {
-      "inquirer": "^9.2.14"
+        "inquirer": "^9.2.14"
     },
     "devDependencies": {
-      "jest": "^29.5.0"
+        "jest": "^29.7.0"
     }
-  }
+}
