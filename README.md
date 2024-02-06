@@ -8,6 +8,7 @@
 - [Credits](#credits)
 - [Website](#website)
 - [Images](#images)
+- [Tutorial](#tutorial)
 - [License](#license)
 
 ## Introduction
@@ -39,6 +40,10 @@ https://github.com/mcrmickben45/SVG-Logo-Generator
 
 <img width="1055" alt="Screen Shot 2024-02-05 at 6 26 20 PM" src="https://github.com/mcrmickben45/SVG-Logo-Generator/assets/137113252/a01e8d73-68cb-4bf6-a94d-2d8504573e4d">
 <img width="584" alt="Screen Shot 2024-02-05 at 6 26 54 PM" src="https://github.com/mcrmickben45/SVG-Logo-Generator/assets/137113252/6affa467-69cf-4e36-af1d-bfc0401c905b">
+
+## Tutorial
+
+https://www.youtube.com/watch?v=GLPuL7Amsy4&ab_channel=Ben
 
 ## License
 The MIT License (MIT)
